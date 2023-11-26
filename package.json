@@ -1,25 +1,53 @@
 {
-  "name": "ne-shop",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "20.6.0",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.4.19",
-    "next": "13.4.19",
-    "postcss": "8.4.29",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
-  }
+    "name": "ne-shop",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "dotenv -c -- next dev",
+        "build": "next build",
+        "start": "dotenv -c -- next start",
+        "mock": "npx mock-config-server",
+        "format": "prettier --write '**/*.{ts,tsx}'",
+        "lint": "eslint . --ext ts --ext tsx"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.9.5",
+        "@splidejs/react-splide": "^0.7.12",
+        "axios": "^1.5.0",
+        "dotenv-cli": "^7.3.0",
+        "js-cookie": "^3.0.5",
+        "mock-config-server": "^3.1.1",
+        "next": "13.4.19",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-hook-form": "^7.48.2",
+        "react-redux": "^8.1.2",
+        "redux": "^4.2.1",
+        "redux-thunk": "^2.4.2"
+    },
+    "devDependencies": {
+        "eslint-plugin-prettier": "^5.0.1",
+        "@next/eslint-plugin-next": "^13.4.19",
+        "@types/js-cookie": "^3.0.6",
+        "@types/node": "20.6.0",
+        "@types/react": "18.2.21",
+        "@types/react-dom": "18.2.7",
+        "@types/react-redux": "^7.1.26",
+        "autoprefix": "^1.0.1",
+        "autoprefixer": "^10.4.15",
+        "eslint": "^8.49.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.1.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-import": "^2.28.1",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-prettier-config": "^1.0.1",
+        "postcss": "^8.4.29",
+        "prettier": "^3.0.3",
+        "prettier-plugin-tailwindcss": "^0.5.4",
+        "tailwindcss": "^3.3.3",
+        "typescript": "5.2.2"
+    }
 }

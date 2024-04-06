@@ -6,4 +6,4 @@
 
 ### `npm run mock`
 
-`<b>`URL: localhost:3000 `</b>`
+<b>URL: localhost:3000 </b>
